@@ -1,6 +1,6 @@
 FROM fukamachi/ccl
 
-RUN apt-get update && apt-get upgrade -y && apt-get install -y default-libmysqlclient-dev
+RUN apt-get update && apt-get upgrade -y && apt-get install -y default-libmysqlclient-dev libpq-dev
 RUN ccl --eval '(ql-dist:install-dist "http://dist.ultralisp.org/" :prompt nil)'
 RUN ccl --eval "(ql:quickload 'slynk)" --eval "(ql:quickload :serapeum)"
 COPY run-server.lisp /
