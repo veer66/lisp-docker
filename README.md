@@ -16,6 +16,13 @@ Run a container using this command:
 docker run -p 127.0.0.1:4023:4023 --rm -it veer66/ccl
 ```
 
+or
+
+```
+docker run -p 127.0.0.1:4023:4023 --rm -it veer66/sbcl
+```
+
+
 ## From Emacs + Sly
 
 * Run sly-connect to localhost at port 4023
